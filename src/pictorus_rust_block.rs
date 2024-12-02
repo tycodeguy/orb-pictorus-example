@@ -80,6 +80,6 @@ impl BlockDef for ChannelRead {
     ///                 connected to the corresponding output ports.
     async fn run(&mut self, inputs: &[impl BlockDataRead], outputs: &mut [impl BlockDataWrite]) {
 
-        self.reciever.receive().await
+        self.receiver.receive().await
     }
 }
