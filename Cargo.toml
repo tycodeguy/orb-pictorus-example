@@ -1,0 +1,13 @@
+[package]
+name = "hello_pictorus"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# Linear algebra / nums
+nalgebra = {version = "0.33.0", default-features = false, features = ["libm"]}
+libm = {version = "0.2.8"}
+
+#Core Sync lib
+embassy-sync = {version = "0.6.0", features = ["defmt"]}
